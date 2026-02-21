@@ -1,0 +1,29 @@
+{
+  "name": "discord-message-spammer",
+  "version": "1.0.0",
+  "description": "Discord Message Spammer by quarzxd",
+  "author": "quarzxd",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "axios": "^1.13.5"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.quarzxd.discordspammer",
+    "productName": "Discord Spammer",
+    "win": {
+      "target": "portable",
+      "icon": "app_icon.ico"
+    },
+    "files": [
+      "**/*"
+    ]
+  }
+}
